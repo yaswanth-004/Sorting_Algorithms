@@ -84,7 +84,14 @@ class GFG {
             System.out.print(arr[i] + " ");
     }
 }
-Input Array: [5, 6, 1, 3]Expected Output: 1 3 5 6 2. Insertion SortBuilds the sorted array one item at a time. It works just like sorting playing cards in your hand; each newly picked card is systematically shifted left into its correct position relative to the cards already sorted.Javapublic class GfG {
+Input Array: [5, 6, 1, 3]Expected Output: 1 3 5 6 2. Insertion SortBuilds the sorted array one item at a time. It works just like sorting playing cards in your hand; each newly picked card is systematically shifted left into its correct position relative to the cards already sorted.Javapublic
+
+
+2. Insertion Sort
+Builds the sorted array one item at a time. It works just like sorting playing cards in your hand; each newly picked card is systematically shifted left into its correct position relative to the cards already sorted.
+
+
+class GfG {
     static void insertionSort(int arr[]) {
         int n = arr.length;
         for (int i = 1; i < n; ++i) {
@@ -106,7 +113,15 @@ Input Array: [5, 6, 1, 3]Expected Output: 1 3 5 6 2. Insertion SortBuilds the so
             System.out.print(arr[i] + " ");
     }
 }
-Input Array: [12, 11, 13, 5, 6]Expected Output: 5 6 11 12 13 3. Selection SortDivides the array into a sorted segment and an unsorted segment. It continuously scans the unsorted segment to find the absolute minimum value, and swaps it directly with the first element of the unsorted segment.Javaimport java.util.Arrays;
+Input Array: [12, 11, 13, 5, 6]Expected Output: 5 6 11 12 13 3. Selection SortDivides the array into a sorted segment and an unsorted segment. It continuously scans the unsorted segment to find the absolute minimum value, and swaps it directly with the first element of the unsorted segment.
+
+
+3. Selection Sort
+Divides the array into a sorted segment and an unsorted segment. It continuously scans the unsorted segment to find the absolute minimum value, and swaps it directly with the first element of the unsorted segment.
+
+
+
+import java.util.Arrays;
 
 class GfG {
     static void selectionSort(int[] arr) {
@@ -132,7 +147,14 @@ class GfG {
         }
     }
 }
-Input Array: [64, 25, 12, 22, 11]Expected Output: 11 12 22 25 64 4. Merge SortA highly efficient, stable, and predictable algorithm that leverages a Divide and Conquer paradigm. It structurally splits the data structure into halves, handles them individually, and stitches them back together seamlessly.Javaimport java.io.*;
+Input Array: [64, 25, 12, 22, 11]Expected Output: 11 12 22 25 64 4. Merge SortA highly efficient, stable, and predictable algorithm that leverages a Divide and Conquer paradigm. It structurally splits the data structure into halves, handles them individually, and stitches them back together seamlessly.
+
+
+3. Selection Sort
+Divides the array into a sorted segment and an unsorted segment. It continuously scans the unsorted segment to find the absolute minimum value, and swaps it directly with the first element of the unsorted segment.
+
+
+import java.io.*;
 
 class GfG {
     static void merge(int arr[], int l, int m, int r) {
@@ -191,7 +213,17 @@ class GfG {
         System.out.println();
     }
 }
-Input Array: [38, 27, 43, 10]Expected Output: 10 27 38 43 5. Quick SortA divide-and-conquer strategy that picks an element as a pivot and partitions the elements around it, sorting the smaller elements to the left and greater ones to the right, before recursively tackling the sub-segments.Javaimport java.util.Arrays;
+Input Array: [38, 27, 43, 10]Expected Output: 10 27 38 43 5. Quick SortA divide-and-conquer strategy that picks an element as a pivot and partitions the elements around it, sorting the smaller elements to the left and greater ones to the right, before recursively tackling the sub-segments.
+
+4. Merge Sort
+A highly efficient, stable, and predictable algorithm that leverages a Divide and Conquer paradigm. It structurally splits the data structure into halves, handles them individually, and stitches them back together seamlessly.
+
+
+
+
+
+
+import java.util.Arrays;
 
 class GfG {
     static int partition(int[] arr, int low, int high) {
@@ -231,7 +263,15 @@ class GfG {
         }
     }
 }
-Input Array: [10, 7, 8, 9, 1, 5]Expected Output: 1 5 7 8 9 10 6. Heap SortAn optimized extension of Selection Sort that makes use of a Binary Heap data structure. Utilizing a max-heap allows instant reference access to the largest item, keeping operations quick and memory bound to in-place boundaries.Javaimport java.util.Arrays;
+Input Array: [10, 7, 8, 9, 1, 5]Expected Output: 1 5 7 8 9 10 6. Heap SortAn optimized extension of Selection Sort that makes use of a Binary Heap data structure. Utilizing a max-heap allows instant reference access to the largest item, keeping operations quick and memory bound to in-place boundaries.
+
+
+5. Quick Sort
+A divide-and-conquer strategy that picks an element as a pivot and partitions the elements around it, sorting the smaller elements to the left and greater ones to the right, before recursively tackling the sub-segments.
+
+
+
+import java.util.Arrays;
 
 public class GFG {
     static void heapify(int[] arr, int n, int i) {
@@ -276,7 +316,14 @@ public class GFG {
             System.out.print(arr[i] + " ");
     }
 }
-Input Array: [9, 4, 3, 8, 10, 2, 5]Expected Output: 2 3 4 5 8 9 10 7. Shell SortAn explicit variant of insertion sort designed to break down long-distance data dependencies. It starts by comparing items far away from each other over a shifting structured sequence gap, reducing comparison cycles down the line.Javapublic class GFG {
+Input Array: [9, 4, 3, 8, 10, 2, 5]Expected Output: 2 3 4 5 8 9 10 7. Shell SortAn explicit variant of insertion sort designed to break down long-distance data dependencies. It starts by comparing items far away from each other over a shifting structured sequence gap, reducing comparison cycles down the line.
+
+
+6. Heap Sort
+An optimized extension of Selection Sort that makes use of a Binary Heap data structure. Utilizing a max-heap allows instant reference access to the largest item, keeping operations quick and memory bound to in-place boundaries.
+
+
+public class GFG {
     public static void shellSort(int[] arr) {
         int n = arr.length;
 
@@ -307,7 +354,16 @@ Input Array: [9, 4, 3, 8, 10, 2, 5]Expected Output: 2 3 4 5 8 9 10 7. Shell Sort
         printArray(arr);
     }
 }
-Input Array: [12, 34, 54, 2, 3]Expected Output: 2 3 12 34 54 8. Counting SortA non-comparison linear integer sort model that tracks array keys based on direct mapping occurrences into index counting arrays. Highly specialized and optimally swift when value domains are small.Javaimport java.util.Arrays;
+Input Array: [12, 34, 54, 2, 3]Expected Output: 2 3 12 34 54 8. Counting SortA non-comparison linear integer sort model that tracks array keys based on direct mapping occurrences into index counting arrays. Highly specialized and optimally swift when value domains are small.
+
+7. Shell Sort
+An explicit variant of insertion sort designed to break down long-distance data dependencies. It starts by comparing items far away from each other over a shifting structured sequence gap, reducing comparison cycles down the line.
+
+
+
+
+
+import java.util.Arrays;
 
 public class CountingSort {
     public static int[] countSort(int[] arr) {
@@ -352,7 +408,18 @@ public class CountingSort {
         System.out.println(Arrays.toString(ans));
     }
 }
-Input Array: [2, 5, 3, 0, 2, 3, 0, 3]Expected Output: [0, 0, 2, 2, 3, 3, 3, 5]9. Radix SortProcesses digit segments piece by piece, from Least Significant Digit (LSD) up towards the Most Significant Digit (MSD). It scales without direct pairwise element value checks by applying localized stable count distributions sequentially.Javaimport java.io.*;
+Input Array: [2, 5, 3, 0, 2, 3, 0, 3]Expected Output: [0, 0, 2, 2, 3, 3, 3, 5]9. Radix SortProcesses digit segments piece by piece, from Least Significant Digit (LSD) up towards the Most Significant Digit (MSD). It scales without direct pairwise element value checks by applying localized stable count distributions sequentially.
+
+
+8. Counting Sort
+A non-comparison linear integer sort model that tracks array keys based on direct mapping occurrences into index counting arrays. Highly specialized and optimally swift when value domains are small.
+
+
+
+
+
+
+import java.io.*;
 import java.util.*;
 
 class Radix {
@@ -403,7 +470,13 @@ class Radix {
         print(arr, n);
     }
 }
-Input Array: [170, 45, 75, 90, 802, 24, 2, 66]Expected Output: 2 24 45 66 75 90 170 802 10. Bucket SortDistributes targets over a series of dynamically calculated isolated lists or fractional buckets. Once mapped out, individual sub-buckets sort their own components cleanly via an Insertion Sort engine before sequential collection concatenation.Javaimport java.util.ArrayList;
+Input Array: [170, 45, 75, 90, 802, 24, 2, 66]Expected Output: 2 24 45 66 75 90 170 802 10. Bucket SortDistributes targets over a series of dynamically calculated isolated lists or fractional buckets. Once mapped out, individual sub-buckets sort their own components cleanly via an Insertion Sort engine before sequential collection concatenation.
+
+9. Radix Sort
+Processes digit segments piece by piece, from Least Significant Digit (LSD) up towards the Most Significant Digit (MSD). It scales without direct pairwise element value checks by applying localized stable count distributions sequentially.
+
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -418,6 +491,10 @@ public class Main {
             bucket.set(j + 1, key);
         }
     }
+
+
+10. Bucket Sort
+Distributes targets over a series of dynamically calculated isolated lists or fractional buckets. Once mapped out, individual sub-buckets sort their own components cleanly via an Insertion Sort engine before sequential collection concatenation.
 
     public static void bucketSort(float[] arr) {
         int n = arr.length;
